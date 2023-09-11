@@ -137,6 +137,7 @@ footer{
 }
 .picture {
     width: 99%;
+    height: 140px;
     aspect-ratio: 16/9;
     background: #ddd;
     display: flex;
@@ -177,6 +178,7 @@ footer{
 }
 .picture2 {
     width: 99%;
+    height: 140px;
     aspect-ratio: 16/9;
     background: #ddd;
     display: flex;
