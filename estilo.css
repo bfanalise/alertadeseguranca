@@ -8,181 +8,129 @@
 body{
     display: flex;
     justify-content: center;
-    margin-top: 5%;
-    background-color: #ebebeb;
+    background-color: #ffffff;
 }
 
 /*------Parâmetros da Página [Cabeçalho]------*/
 
 #corpo{
-    width: 400px;
+    width: 500px;
     height: auto;
-    background-color: #FFF;
-    border-radius: 5px;
+    /*background-color: #d8d8d8;*/
+    /*border-radius: 5px;*/
     display: flex;
     flex-direction:column;
     align-items: center;
 }
+
 header{
+    width: 500px;
+    height: 50px;
+    text-align: center;
+    font-size: 12pt;
+    font-weight: bold;
+    padding-top: 20px;
+    /*background-color: yellowgreen;*/ 
+}
+
+.tabela{
+    width: 500px;
+    height: auto;
+    /*background-color: blue;*/
+}
+.bloco1{
+    display: flex;
+    justify-content: left;
+    align-items:center;
+    width: 500px;
+    height: 30px;
+    border: solid 0.5px;
+    /*background-color: #3f3f3f;*/
+}
+.bloco2{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+    /*border: solid 0.5px;*/
+    /*background-color: #3f3f3f;*/
+}
+.bloco3{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    margin-top: 10px;
     width: 100%;
     height: 50px;
-    /*background-color: #f8f8f8;*/
-    display: flex;
-    justify-content: space-around;
-    flex-direction:row;
-    align-items: center;
-    border-bottom: solid 0.5px #d3dfdc;
+    /*border: solid 0.5px;*/
+    /*background-color: #3f3f3f;*/
 }
-.logo1{
-    width: 170px;
-    height: 60px;
-    background-size: 150px;
-    background-repeat: no-repeat;
-    background-image: url(logo-bom-futuro.png);
-    background-position-y: center;
-    /*background-color: #009970;*/
-}
-.logo2{
-    width: 170px;
-    height: 60px;
-    background-size: 40px;
-    background-repeat: no-repeat;
-    background-position: right;
-    background-position-y: center;
-    background-image: url(logoSeg.png);
-    /*background-color: #a1c4ba;*/
-}
-
-/*------Parâmetros da Página [Superior]------*/
-
-article{
-    width: 340px;
-    height:auto;
-    /*background-color: rgb(223, 223, 223);*/
-}
-
-#header2{
- border: 0px;
- height: 30px;
-}
-h1{
-    font-size: 10pt;
-}
-#tabela01{
-    display: flex;
-    justify-content: space-between;
-    flex-direction:column;
-    align-items: center;
-    width: 340px;
-    /*background-color: #009970;*/
-}
-#tabela01 tr{
-    width: 350px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-}
-#tabela01 .label{
-    width: 150px;
-    height: 20px;
-    /*border: solid 1px aquamarine;
-    background-color: aquamarine;*/
-    font-weight:normal;
+th{
+    width: 100%;
     text-align: left;
+    padding-left: 1%;
 }
-#tabela01 .input{
-    width: 150px;
+.tdbloco01{
+    display: flex;
+    justify-content: left;
+    width: 100%;
     height: 30px;
-    border-bottom: solid 1px aquamarine;
-    /*background-color: aquamarine;*/
-    font-weight:normal;
-    text-align: left;
-}
-#tabela01 .label2{
-    width: 325px;
-    height: 20px;
-    /*border-bottom: solid 1px aquamarine;*/
-    /*background-color: aquamarine;*/
-    font-weight:normal;
-    text-align: left;
-}
-#tabela01 .input2{
-    width: 325px;
-    height: 20px;
-    /*border: solid 1px aquamarine;*/
-    background-color: aquamarine;
-    font-weight:normal;
-    text-align: left;
-    border-bottom: solid 1px rgb(75, 75, 75);
-}
-#tabela01 .label3{
-    width: 325px;
-    height: 25px;
-    border-bottom: solid 1px rgb(54, 54, 54);
-    /*background-color: aquamarine;*/
-    font-weight:normal;
-    text-align: left;
-    font-size: 9pt;
-}
-#tabela01 .label4{
-    width: 325px;
-    height: 20px;
-    border-top: solid 1px rgb(54, 54, 54);
-    /*background-color: aquamarine;*/
-    font-weight:normal;
-    text-align: center;
-}
-.espaco{
-    /*background-color: #009970;*/
-    color: #FFF;
-    width: 200px;
-    height: 30px;
-}
-/*Estilização de inputs e textarea*/
-textarea{
-    resize: none;
-    width: 320px;
-    height: 40px;
-    max-width: 325px;
-    max-height: 100px;
-    border: solid 0.5px;
-    font-size: 10pt;
-    outline: none;
-    padding-left: 5px;
-
+    /*background-color: #00d9ff;*/
 }
 input[type=date]{
-    width: 150px;
-    border: solid 0.5px;
+    text-align: center;
+    width: 90%;
+    height: 25px;
+    border: 0px;
     outline: none;
 }
 input[type=time]{
-    width: 150px;
-    border: solid 0.5px;
+    text-align: center;
+    width: 90%;
+    height: 25px;
+    border: 0px;
     outline: none;
 }
 input[type=text]{
-    width: 320px;
-    height: 20px;
-    border: 0px;
-    padding-left: 5px;
-    font-size: 10pt;
+    text-align: left;
+    padding-left: 1%;
+    width: 100%;
+    height: 25px;
+    border: solid 0.5px;
     outline: none;
 }
+textarea{
+    border: solid 0.5px;
+    resize: none;
+    padding-left: 1%;
+    width: 100%;
+    height: 35px;
+    outline: none;
+}
+footer{
+    background-color: #009970;
+    width: 200px;
+    height: 10px;
+}
 
-/*Estilização Input imagem*/
+/*------Parâmetros do Input imagem------*/
+/*------Parâmetros do Input imagem------*/
+/*------Parâmetros do Input imagem------*/
 #picture__input{
     display: none;
 }
 .picture {
-    width: 150px;
+    width: 99%;
     aspect-ratio: 16/9;
     background: #ddd;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #aaa;
-    border: 2px dashed currentcolor;
+    border: solid 0.5px;
+    /*border: 2px dashed currentcolor;*/
     cursor: pointer;
     font-family: sans-serif;
     outline: none;
@@ -214,14 +162,15 @@ input[type=text]{
     display: none;
 }
 .picture2 {
-    width: 150px;
+    width: 99%;
     aspect-ratio: 16/9;
     background: #ddd;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #aaa;
-    border: 2px dashed currentcolor;
+    border: solid 0.5px;
+    /*border: 2px dashed currentcolor;*/
     cursor: pointer;
     font-family: sans-serif;
     outline: none;
@@ -248,8 +197,65 @@ input[type=text]{
   .picture__img2 {
     max-width: 100%;
   }
-footer{
-    background-color: #009970;
-    width: 200px;
-    height: 10px;
+  .fotos{
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+    /*background-color: #009970;*/
+    display: flex;
+  }
+  .fotografia{
+    width: 100%;
+    height: 100%;
+    /*background-color: #668a80;*/
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+  }
+
+
+/*------Fim Parâmetros do Input imagem------*/
+/*------Fim Parâmetros do Input imagem------*/
+/*------Fim Parâmetros do Input imagem------*/
+.assinaturas{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+    /*border: solid 0.5px;*/
+    /*background-color: #3f3f3f;*/
+}
+.assinatura_tec{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+    /*border: solid 0.5px;*/
+    /*background-color: #3f3f3f;*/
+}
+.tecnico{
+    width: 100%;
+    height: 30px;
+    border-bottom: solid 0.5px;
+    color: #009970;
+    text-align: center;
+}
+
+header.logos{
+    /*background-color: #009970;*/
+    display: flex;
+    justify-content: space-between;
+}
+.logobf{
+    width: 120px;
+    height: 30px;
+}
+.logotec{
+    width: 30px;
+    height: 30px;
 }
