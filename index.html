@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALERTA DE SEGURANÇA</title>
+    <link rel="stylesheet" type="text/css"  href="estilo.css">
+</head>
+<body>
+   <div id="corpo">
+    <header>
+        <div class="logo1"></div>
+        <div class="logo2"></div>
+    </header>
+    <article>
+        <header id="header2">
+        <h1>ALERTA DE SEGURANÇA</h1>
+        </header>
+        <form>
+            <table id="tabela01">
+                <!---->
+                <tr>
+                    <td class="label"><b>Data:</b></th>
+                    <td class="label"><b>Hora:</b></th>
+                </tr>
+                <tr>
+                    <td class="input"><input type="date"></td>
+                    <td class="input"><input type="time"></td>
+                </tr>
+                <!---->
+                <tr>
+                    <td class="input3"><textarea placeholder="Envolvidos:"></textarea></td>
+                </tr>
+                <tr>
+                    <td class="input3"><textarea placeholder="Objetivos:"></textarea></td>
+                </tr>
+                <tr>
+                    <td class="input2" ><input type="text" placeholder="Equipamentos:"></td>
+                </tr>
+                <tr>
+                    <td>..</td>
+                </tr>
+                <!--Inicio do posicionamento da imagem-->
+                <tr>
+                    <td>
+                        <label class="picture" for="picture__input" tabindex="0">
+                        <span class="picture__image"></span>
+                        </label>
+                        <input type="file" name="picture__input" id="picture__input">
+                    </td>
+                    <td>
+                        <label class="picture2" for="picture__input2" tabindex="0">
+                        <span class="picture__image2"></span>
+                        </label>
+                        <input type="file" name="picture__input2" id="picture__input2">
+                    </td>
+                </tr>
+                <!--Fim do posicionamento da imagem-->
+                <tr>
+                    <td class="espaco">..</td>
+                </tr>
+                <tr>
+                    <td class="input3"><textarea placeholder="Descrição das atividades:"></textarea></td>
+                </tr>
+                <tr>
+                    <td class="input3"><textarea placeholder="Observações:"></textarea></td>
+                </tr>
+                <tr>
+                    <td class="input3"><textarea placeholder="Providências:"></textarea></td>
+                </tr>
+                <!--Assinaturas-->
+                <tr>
+                    <th class="label3">Ass.: envolvido 01:</th>
+                </tr>
+                <tr>
+                    <th class="label3">Ass.: envolvido 02:</th>
+                </tr>
+                <tr>
+                    <th class="label3">Ass.: Encarregado:</th>
+                </tr>
+                <tr>
+                    <th class="label3">Ass.: Gerente:</th>
+                </tr>
+                <td class="espaco">..</td>
+<tr>
+    <th class="label4">Assinatura Téc. Segurança:</th>
+</tr>
+            </table>
+        </form>
+    </article>
+    <button onclick="window.print()">PDF</button>
+    <br>
+    <footer></footer>
+   </div>
+<script src="imagem.js"></script>
+</body>
+</html>
