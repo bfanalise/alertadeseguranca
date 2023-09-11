@@ -7,48 +7,47 @@
     <link rel="stylesheet" type="text/css"  href="estilo.css">
 </head>
 <body>
-   <div id="corpo">
-    <header>
-        <div class="logo1"></div>
-        <div class="logo2"></div>
-    </header>
-    <article>
-        <header id="header2">
-        <h1>ALERTA DE SEGURANÇA</h1>
+    <div id="corpo">
+        <header class="logos">
+            <img src="logo-bom-futuro.png" class="logobf">
+            <img src="logoSeg.png" class="logotec">
         </header>
-        <form>
-            <table id="tabela01">
-                <!---->
-                <tr>
-                    <td class="label"><b>Data:</b></th>
-                    <td class="label"><b>Hora:</b></th>
-                </tr>
-                <tr>
-                    <td class="input"><input type="date"></td>
-                    <td class="input"><input type="time"></td>
-                </tr>
-                <!---->
-                <tr>
-                    <td class="input3"><textarea placeholder="Envolvidos:"></textarea></td>
-                </tr>
-                <tr>
-                    <td class="input3"><textarea placeholder="Objetivos:"></textarea></td>
-                </tr>
-                <tr>
-                    <td class="input2" ><input type="text" placeholder="Equipamentos:"></td>
-                </tr>
-                <tr>
-                    <td>..</td>
-                </tr>
-                <!--Inicio do posicionamento da imagem-->
-                <tr>
-                    <td>
+        <header>ALERTA DE SEGURANÇA</header>
+    <form>
+        <table id="tabela">
+            <tr class="bloco1">
+                <th>Data:</th>
+                <td class="tdbloco01">
+                    <input type="date">
+                </td>
+                <th>Hora:</th>
+                <td class="tdbloco01">
+                    <input type="time">
+                </td>
+            </tr>
+            <tr class="bloco2">
+                <td class="tdbloco01">
+                    <input type="text" placeholder="Envolvidos">
+                </td>
+            </tr>
+            <tr class="bloco3">
+                <td class="tdbloco01">
+                    <textarea placeholder="Objetivos"></textarea>
+                </td>
+            </tr>
+            <tr class="bloco3">
+                <td class="tdbloco01">
+                    <textarea placeholder="Equipamentos"></textarea>
+                </td>
+            </tr>
+                <tr class="fotos">
+                    <td class="fotografia">
                         <label class="picture" for="picture__input" tabindex="0">
                         <span class="picture__image"></span>
                         </label>
                         <input type="file" name="picture__input" id="picture__input">
                     </td>
-                    <td>
+                    <td class="fotografia">
                         <label class="picture2" for="picture__input2" tabindex="0">
                         <span class="picture__image2"></span>
                         </label>
@@ -56,42 +55,56 @@
                     </td>
                 </tr>
                 <!--Fim do posicionamento da imagem-->
-                <tr>
-                    <td class="espaco">..</td>
-                </tr>
-                <tr>
-                    <td class="input3"><textarea placeholder="Descrição das atividades:"></textarea></td>
-                </tr>
-                <tr>
-                    <td class="input3"><textarea placeholder="Observações:"></textarea></td>
-                </tr>
-                <tr>
-                    <td class="input3"><textarea placeholder="Providências:"></textarea></td>
-                </tr>
-                <!--Assinaturas-->
-                <tr>
-                    <th class="label3">Ass.: envolvido 01:</th>
-                </tr>
-                <tr>
-                    <th class="label3">Ass.: envolvido 02:</th>
-                </tr>
-                <tr>
-                    <th class="label3">Ass.: Encarregado:</th>
-                </tr>
-                <tr>
-                    <th class="label3">Ass.: Gerente:</th>
-                </tr>
-                <td class="espaco">..</td>
-<tr>
-    <th class="label4">Assinatura Téc. Segurança:</th>
-</tr>
-            </table>
-        </form>
-    </article>
-    <button onclick="window.print()">PDF</button>
-    <br>
-    <footer></footer>
-   </div>
+            </tr>
+            <tr class="bloco3">
+                <td class="tdbloco01">
+                    <textarea placeholder="Descrição das atividades"></textarea>
+                </td>
+            </tr>
+            <tr class="bloco3">
+                <td class="tdbloco01">
+                    <textarea placeholder="Obseravações"></textarea>
+                </td>
+            </tr>
+            <tr class="bloco3">
+                <td class="tdbloco01">
+                    <textarea placeholder="Providências"></textarea>
+                </td>
+            </tr>
+            <tr class="assinaturas">
+                <td class="tdbloco01">
+                    <input type="text" placeholder="Ass. Envolvido 01:">
+                </td>
+            </tr>
+            <tr class="assinaturas">
+                <td class="tdbloco01">
+                    <input type="text" placeholder="Ass. Envolvido 02:">
+                </td>
+            </tr>
+            <tr class="assinaturas">
+                <td class="tdbloco01">
+                    <input type="text" placeholder="Ass. Encarregado:">
+                </td>
+            </tr>
+            <tr class="assinaturas">
+                <td class="tdbloco01">
+                    <input type="text" placeholder="Ass. Gerente:">
+                </td>
+            </tr>
+            <tr class="assinatura_tec">
+                <td class="tecnico">
+                </td>
+            </tr>
+            <tr class="assinatura_tec">
+                <td class="tecnico2">
+                Técnico Segurança do Trabalho
+                </td>
+            </tr>
+        </table>
+    </form>
+        <button onclick="window.print()">Gerar PDF</button><br>
+        <footer></footer>
+    </div>
 <script src="imagem.js"></script>
 </body>
 </html>
